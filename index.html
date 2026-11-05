@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>APONYM — el nombre no viaja</title>
+  <meta name="description" content="APONYM seudonimiza documentos jurídicos antes de pasarlos por una IA. Reemplaza nombres, RUT, domicilios y causas por marcadores y deja la llave en tu computador.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="APONYM">
+  <meta property="og:title" content="APONYM — el nombre no viaja">
+  <meta property="og:description" content="Seudonimización local para documentos jurídicos. La llave para volver a los datos originales queda en tu computador.">
+  <meta property="og:image" content="assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/icono.png" sizes="256x256">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="contenedor cabecera__fila">
+      <a class="marca" href="#inicio" aria-label="APONYM, ir al inicio">
+        <img src="assets/logo-header.png" alt="APONYM" width="170" height="47">
+      </a>
+      <nav class="nav" aria-label="Secciones">
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#reemplaza">Qué reemplaza</a>
+        <a href="#local">Local por diseño</a>
+        <a class="nav__cta" href="#contacto">Pedir una demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- 1. Hero -->
+    <section class="hero contenedor">
+      <p class="eyebrow"><span class="eyebrow__linea" aria-hidden="true"></span> Seudonimización local para documentos jurídicos</p>
+      <h1 class="hero__titulo">El nombre<br>no viaja.</h1>
+      <p class="hero__bajada">
+        APONYM reemplaza nombres, RUT, domicilios y causas por marcadores antes de que
+        el documento llegue a una IA. La llave para volver a los datos originales
+        queda en tu computador.
+      </p>
+      <div class="hero__acciones">
+        <a class="boton" href="#contacto">Pedir una demo</a>
+        <a class="boton boton--fantasma" href="#como-funciona">Ver cómo funciona</a>
+      </div>
+      <p class="hero__sello">
+        <img src="assets/isotipo.png" alt="" width="20" height="20" aria-hidden="true">
+        <span>Sello APY · programa de escritorio para Windows · sin conexión</span>
+      </p>
+    </section>
+
+    <!-- Captura real del panel -->
+    <section class="contenedor captura">
+      <figure class="captura__marco">
+        <img src="assets/panel.png" alt="Panel de APONYM en Windows con las dos etapas del flujo y la fila de acciones." width="1000" height="316" loading="lazy">
+        <figcaption>El panel, tal como se instala: dos etapas y las acciones del flujo.</figcaption>
+      </figure>
+    </section>
+
+    <!-- 2. El problema -->
+    <section class="problema contenedor">
+      <p class="problema__texto">
+        Consultar un caso real con una IA es cómodo. El problema es todo lo que viaja
+        con el documento: la persona, su RUT, su casa, el tribunal donde litiga.
+      </p>
+      <p class="problema__nota">
+        La Ley 21.719 entra en vigencia el 1 de diciembre de 2026. El proyecto que la posterga
+        al 15 de octubre de 2027 ya avanzó en el Congreso, pero no cambia la fecha mientras no
+        se publique en el Diario Oficial. Una capa previa de seudonimización reduce la
+        exposición de los datos sensibles del caso.
+      </p>
+    </section>
+
+    <!-- 3. Cómo funciona -->
+    <section id="como-funciona" class="seccion contenedor">
+      <h2 class="seccion__titulo">Cómo funciona</h2>
+      <p class="seccion__bajada">Dos carpetas y una llave. Nada más que aprender.</p>
+
+      <ol class="pasos">
+        <li class="paso">
+          <span class="paso__numero" aria-hidden="true">1</span>
+          <h3 class="paso__titulo">Deja el documento</h3>
+          <p>Arrastra el archivo <code>.docx</code>, <code>.pdf</code> con texto, <code>.md</code> o
+          <code>.txt</code> a la carpeta <code class="chip">1-DEJA-AQUI</code>. Si el caso tiene
+          nombres poco frecuentes, agrégalos en la lista del caso.</p>
+        </li>
+        <li class="paso">
+          <span class="paso__numero" aria-hidden="true">2</span>
+          <h3 class="paso__titulo">APONYM seudonimiza</h3>
+          <p>El documento queda en <code class="chip">2-SEUDONIMIZADO</code> como copia limpia
+          (sin autor, historial ni comentarios) y en <code>llaves/</code> aparece
+          <code>LLAVE-&lt;CÓDIGO&gt;.pdf</code> con la tabla marcador → dato original.</p>
+        </li>
+        <li class="paso">
+          <span class="paso__numero" aria-hidden="true">3</span>
+          <h3 class="paso__titulo">Trabaja con la IA y restaura a mano</h3>
+          <p>Envía solo la copia seudonimizada. Con la respuesta en tu editor, reemplaza cada
+          marcador usando la llave y <kbd>Ctrl</kbd> + <kbd>H</kbd>. Esa restauración ocurre
+          fuera del programa y bajo tu revisión.</p>
+        </li>
+      </ol>
+
+      <p class="seccion__alerta">
+        Lo que el motor no reconoce se declara en la lista del caso: nombres poco frecuentes,
+        alias, empresas y frases que deban conservarse. La revisión final siempre es humana.
+      </p>
+    </section>
+
+    <!-- 4. Qué reemplaza / qué conserva -->
+    <section id="reemplaza" class="seccion seccion--tarjetas contenedor">
+      <h2 class="seccion__titulo">Qué reemplaza y qué conserva</h2>
+      <p class="seccion__bajada">La decisión de qué ocultar no es estética: define si el documento sigue
+        sirviendo para litigar.</p>
+
+      <div class="dos-columnas">
+        <div class="columna">
+          <h3 class="columna__titulo">Reemplaza por marcadores</h3>
+          <ul class="lista lista--tacha">
+            <li>Nombres y apellidos frecuentes</li>
+            <li>RUT, incluidas sociedades</li>
+            <li>Correos y teléfonos</li>
+            <li>Domicilios</li>
+            <li>Oficios e instituciones</li>
+            <li>RIT, RUC y Rol de la causa</li>
+          </ul>
+        </div>
+        <div class="columna">
+          <h3 class="columna__titulo">Conserva</h3>
+          <ul class="lista lista--check">
+            <li>Comunas y regiones, porque definen competencia</li>
+            <li>Citas jurisprudenciales completas</li>
+            <li>Las frases que declares con <code>preservar:</code></li>
+            <li>La estructura del documento y el tipo de cada marcador: <code>[INST-HOSPITAL-1-A7F3]</code></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Local por diseño -->
+    <section id="local" class="banda">
+      <div class="contenedor">
+        <h2 class="banda__titulo">Local por diseño</h2>
+        <div class="banda__grid">
+          <div>
+            <h3>Sin red</h3>
+            <p>No llama a ningún servidor, no tiene telemetría y no actualiza nada por su cuenta.</p>
+          </div>
+          <div>
+            <h3>Sin cuentas</h3>
+            <p>Se activa con un código en el equipo. No hay registro, ni login, ni panel en la nube.</p>
+          </div>
+          <div>
+            <h3>La llave no sale</h3>
+            <p>El mapa y la llave quedan en tu computador, fuera de OneDrive y de cualquier carpeta
+              sincronizada.</p>
+          </div>
+        </div>
+        <p class="banda__nota">
+          APONYM aplica seudonimización en el sentido del artículo 2 letra l) de la Ley 21.719:
+          los datos se reemplazan y el vínculo queda en un mapa separado, en poder de quien usa el
+          programa. No es anonimización irreversible y no reemplaza el criterio del abogado.
+        </p>
+      </div>
+    </section>
+
+    <!-- 6. Equipo -->
+    <section class="seccion contenedor">
+      <h2 class="seccion__titulo">Quiénes lo hacemos</h2>
+      <div class="equipo">
+        <div class="persona">
+          <span class="persona__inicial" aria-hidden="true">D</span>
+          <div>
+            <h3>Damián Pinto</h3>
+            <p>Derecho. Diseña y desarrolla el programa; define qué se oculta y qué se conserva
+              en cada capa.</p>
+          </div>
+        </div>
+        <div class="persona">
+          <span class="persona__inicial" aria-hidden="true">H</span>
+          <div>
+            <h3>Hugo Cariaga</h3>
+            <p>Informática. Audita el código y prueba el instalador en equipos limpios antes de
+              cada entrega.</p>
+          </div>
+        </div>
+      </div>
+      <p class="equipo__frase">El derecho pone el criterio; la informática pone el método.</p>
+    </section>
+
+    <!-- 7. Contacto -->
+    <section id="contacto" class="contacto contenedor">
+      <h2 class="contacto__titulo">¿Lo vemos con un caso tuyo?</h2>
+      <p class="contacto__texto">
+        Una demo de veinte minutos: se toma un documento real, se seudonimiza y se muestra la
+        llave. Si el flujo no te sirve, lo sabrás en esa media hora.
+      </p>
+      <div class="contacto__acciones">
+        <a class="boton" href="mailto:dpintovillaseca@gmail.com?subject=Demo%20APONYM">Escribir un correo</a>
+        <a class="boton boton--fantasma" href="https://wa.me/56950669232">WhatsApp</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__fila">
+      <img src="assets/logo-claro.png" alt="APONYM" width="140" height="39">
+      <nav class="pie__nav" aria-label="Legal">
+        <a href="privacidad.html">Privacidad</a>
+        <a href="eula.html">Condiciones de uso</a>
+        <a href="mailto:dpintovillaseca@gmail.com">Contacto</a>
+      </nav>
+      <p class="pie__legal">© 2026 APONYM · Hecho en Chile</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
+
+
