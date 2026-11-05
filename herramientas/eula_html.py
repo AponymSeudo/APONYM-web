@@ -19,7 +19,6 @@ PLANTILLA = """<!DOCTYPE html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
   <title>Condiciones de uso — APONYM</title>
   <meta name="description" content="Condiciones de uso de APONYM.">
   <link rel="icon" href="assets/icono.png" sizes="256x256">

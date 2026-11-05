@@ -42,7 +42,7 @@ python herramientas\eula_html.py
 
 ## Pendiente antes de publicar
 
-1. **Dominio**: `aponym.cl` está registrado; falta delegar los nameservers y apuntar Pages.
+1. **Dominio**: publicado en `https://aponym.cl` con HTTPS y `www` redirigiendo (05-11).
 2. **Revisión tuya** de los textos (es lo que va a leer un abogado).
 3. **Correo**: hoy el contacto es el Gmail personal; cambiar a `contacto@aponym.cl` cuando
    exista el buzón.
