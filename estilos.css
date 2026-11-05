@@ -13,8 +13,11 @@
   --ambar: #8A5A20;
   --verde: #2F6B4F;
   --terracota: #B4552F;
+  --terracota-profunda: #7E3A26;
+  --texto-sobre-terracota: #F4E9DF;
+  --texto-sobre-terracota-suave: #E5D0C4;
+  --texto-sobre-terracota-tenue: #D9C0B2;
   --ocre: #C98A2E;
-  --teal: #1F4E4A;
   --teal-tinte: #E1E9E7;
   --rubor: #F2E3D9;
   --arena: #E2DCCD;
@@ -54,8 +57,9 @@ body {
   margin: 0;
   background-color: var(--fondo);
   background-image:
-    radial-gradient(640px circle at 15% 18%, rgba(201, 138, 46, .08), transparent 70%),
-    radial-gradient(680px circle at 85% 82%, rgba(47, 107, 79, .06), transparent 70%);
+    radial-gradient(720px circle at 12% 15%, rgba(201, 138, 46, .11), transparent 70%),
+    radial-gradient(760px circle at 88% 28%, rgba(180, 85, 47, .07), transparent 70%),
+    radial-gradient(820px circle at 55% 92%, rgba(47, 107, 79, .06), transparent 72%);
   background-attachment: fixed;
   color: var(--tinta);
   font-family: var(--sans);
@@ -534,8 +538,8 @@ kbd { border: 1px solid var(--borde); background: var(--papel); }
 /* ---------- banda oscura ---------- */
 
 .banda {
-  background: var(--teal);
-  color: var(--texto-sobre-oscuro);
+  background: var(--terracota-profunda);
+  color: var(--texto-sobre-terracota);
   padding: 88px 0;
 }
 
@@ -569,7 +573,7 @@ kbd { border: 1px solid var(--borde); background: var(--papel); }
 
 .banda__grid p {
   margin: 0;
-  color: var(--texto-sobre-oscuro-suave);
+  color: var(--texto-sobre-terracota-suave);
   font-size: 15px;
 }
 
@@ -577,7 +581,7 @@ kbd { border: 1px solid var(--borde); background: var(--papel); }
   margin: 56px 0 0;
   padding-top: 22px;
   border-top: 1px solid var(--borde-sobre-oscuro-medio);
-  color: var(--texto-sobre-oscuro-medio);
+  color: var(--texto-sobre-terracota-tenue);
   font-size: 14px;
   max-width: 780px;
 }
@@ -729,7 +733,7 @@ kbd { border: 1px solid var(--borde); background: var(--papel); }
 
 .contacto .boton--fantasma:hover { background: rgba(255, 255, 255, .16); }
 
-.banda :focus-visible,
+.banda :focus-visible { outline-color: var(--papel); }
 .contacto :focus-visible { outline-color: var(--ocre); }
 
 .ficha__item {
