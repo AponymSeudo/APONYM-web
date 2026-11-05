@@ -1,27 +1,18 @@
 # Publicar el sitio — pasos exactos
 
-Todo el sitio ya está armado y es estático: **no necesita build**. Falta subirlo, activar
-GitHub Pages y apuntar el dominio.
+**Estado: publicado en `https://aponym.cl` el 05-11-2026.** El sitio es estático y no
+necesita build. Lo que sigue queda como registro de cómo se armó y cómo se mantiene.
 
-## 0. Datos que hay que fijar
+## 0. Datos
 
 | Dato | Valor |
 |---|---|
-| Dominio | `aponym.cl` (registrado; falta delegar los nameservers) |
+| Dominio | `aponym.cl` (registrado en NIC, DNS en Cloudflare) |
 | Repo | `APONYM-web` en la organización `AponymSeudo`, **público** (Pages gratis exige repo público) |
 | Cuenta | la de la organización `AponymSeudo` (Damián como owner) |
 
-Cuando el dominio esté confirmado, ejecutar desde esta carpeta:
-
-```
-echo aponym.cl > CNAME
-```
-
-Y recién al publicar, quitar el `noindex`:
-
-- En `index.html`, `privacidad.html`, `eula.html` y `404.html`: borrar la línea
-  `<meta name="robots" content="noindex, nofollow">`.
-- En `robots.txt`: cambiar `Disallow: /` por `Allow: /`.
+Ya hecho: `CNAME` con `aponym.cl`, dominio validado en Pages, `Enforce HTTPS` activo,
+`noindex` retirado de los cuatro HTML y `robots.txt` en `Allow: /`.
 
 ## 1. Crear el repositorio y subir
 
@@ -100,6 +91,5 @@ Debe responder `200` y `strict-transport-security`. Probar también:
 - Si se agrega una sección nueva, mantener la regla: sin scripts, sin fuentes externas,
   sin cookies.
 - Cuando cambie el EULA del producto: `python herramientas\eula_html.py` y volver a subir.
-- `og.png` ya está en `assets/` (1200×630). `og:url`, `og:image` y `twitter:image` apuntan
-  hoy a `https://aponymseudo.github.io/APONYM-web/`; al publicar el dominio, cambiarlos a
-  `https://aponym.cl/`.
+- `og.png` está en `assets/` (1200×630) y `og:url`, `og:image` y `twitter:image` apuntan a
+  `https://aponym.cl/`. Si el dominio cambia, actualizar esas tres etiquetas.
