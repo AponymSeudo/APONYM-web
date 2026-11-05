@@ -15,7 +15,6 @@
   --terracota: #B4552F;
   --ocre: #C98A2E;
   --teal: #1F4E4A;
-  --teal-profundo: #173B37;
   --teal-tinte: #E1E9E7;
   --rubor: #F2E3D9;
   --arena: #E2DCCD;
@@ -654,7 +653,7 @@ kbd { border: 1px solid var(--borde); background: var(--papel); }
 /* ---------- pie ---------- */
 
 .pie {
-  background: var(--teal-profundo);
+  background: var(--tinta);
   color: var(--texto-sobre-oscuro-claro);
   padding: 34px 0;
 }
@@ -703,7 +702,7 @@ kbd { border: 1px solid var(--borde); background: var(--papel); }
 .equipo-seccion .equipo__frase { color: var(--tinta-suave); }
 
 .contacto {
-  background: var(--teal);
+  background: var(--tinta);
   border-color: var(--borde-sobre-oscuro);
   color: var(--texto-sobre-oscuro);
   box-shadow: var(--sombra-panel);
