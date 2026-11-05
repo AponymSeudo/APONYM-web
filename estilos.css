@@ -26,7 +26,7 @@
   --borde-sobre-oscuro: rgba(236, 235, 231, .14);
   --borde-sobre-oscuro-medio: rgba(236, 235, 231, .22);
   --borde-sobre-oscuro-fuerte: rgba(236, 235, 231, .45);
-  --vidrio-cabecera: rgba(236, 235, 231, .72);
+  --vidrio-cabecera: rgba(248, 246, 241, .72);
 
   --vidrio: rgba(255, 255, 255, .58);
   --vidrio-oscuro: rgba(255, 255, 255, .06);
@@ -45,6 +45,17 @@
 
 * { box-sizing: border-box; }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: .05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 160px 160px;
+}
+
 html { scroll-behavior: smooth; }
 
 [id] { scroll-margin-top: 96px; }
@@ -53,8 +64,11 @@ body {
   margin: 0;
   background-color: var(--fondo);
   background-image:
-    radial-gradient(720px circle at 12% 15%, rgba(61, 90, 104, .10), transparent 70%),
-    radial-gradient(820px circle at 55% 92%, rgba(140, 154, 162, .08), transparent 72%);
+    radial-gradient(1200px 620px at 50% -6%, rgba(255, 255, 255, .92), transparent 64%),
+    radial-gradient(760px 520px at 10% 16%, rgba(220, 229, 232, .50), transparent 70%),
+    radial-gradient(820px 560px at 92% 26%, rgba(201, 207, 210, .30), transparent 70%),
+    radial-gradient(900px 600px at 62% 72%, rgba(255, 255, 255, .22), transparent 72%),
+    linear-gradient(180deg, #F8F6F1 0%, #EFEDE7 24%, #ECEBE7 55%, #F2F0EA 100%);
   background-attachment: fixed;
   color: var(--tinta);
   font-family: var(--sans);
@@ -684,6 +698,22 @@ kbd { border: 1px solid var(--borde); background: var(--papel); }
 
 .pie__legal { margin: 0; }
 
+/* ---------- franjas de fondo ---------- */
+
+.franja { position: relative; }
+
+.franja--clara {
+  background: #F2F0EA;
+  box-shadow: 0 0 0 100vmax #F2F0EA;
+  clip-path: inset(0 -100vmax);
+}
+
+.franja--fria {
+  background: #EEF2F3;
+  box-shadow: 0 0 0 100vmax #EEF2F3;
+  clip-path: inset(0 -100vmax);
+}
+
 /* ---------- capa de color: el expediente anotado ---------- */
 
 .problema {
@@ -693,6 +723,7 @@ kbd { border: 1px solid var(--borde); background: var(--papel); }
   padding: 56px;
   background: var(--azul-niebla);
   border-radius: 16px;
+  box-shadow: var(--sombra-panel);
 }
 
 .paso__numero {
@@ -884,6 +915,7 @@ kbd { border: 1px solid var(--borde); background: var(--papel); }
   padding: 22px 22px 26px;
   border: 1px solid var(--borde);
   border-radius: var(--radio);
+  box-shadow: var(--sombra-panel);
 }
 
 .publico__tarjeta--ocre { background: var(--beige); }
