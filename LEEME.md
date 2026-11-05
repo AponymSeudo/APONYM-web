@@ -7,8 +7,8 @@ dependencias y sin terceros: solo HTML, una hoja de estilos y los PNG de marca.
 
 Doble clic en `index.html`. Se abre en el navegador; no necesita servidor.
 
-Para publicarlo después en GitHub Pages, subir esta carpeta tal cual a un repo
-`aponym-web` y activar Pages en la raíz.
+Publicado con GitHub Pages desde `AponymSeudo/APONYM-web` (rama `main`, raíz).
+Preview: `https://aponymseudo.github.io/APONYM-web/`.
 
 ## Archivos
 
@@ -42,10 +42,12 @@ python herramientas\eula_html.py
 
 ## Pendiente antes de publicar
 
-1. **Dominio**: `aponym.cl` estaba libre al 29-10. Registrarlo en NIC y apuntar Pages.
+1. **Dominio**: `aponym.cl` está registrado; falta delegar los nameservers y apuntar Pages.
 2. **Revisión tuya** de los textos (es lo que va a leer un abogado).
-3. **Deuda menor de marca**: la carpeta de mapas sigue en %LOCALAPPDATA%\\Anonimizador;
+3. **Correo**: hoy el contacto es el Gmail personal; cambiar a `contacto@aponym.cl` cuando
+   exista el buzón.
+4. **Deuda menor de marca**: la carpeta de mapas sigue en %LOCALAPPDATA%\\Anonimizador;
    es invisible para el usuario y se renombra en una pasada aparte (mueve datos reales).
-4. **Autorización escrita** si alguna vez se nombra a la Clínica.
-5. **Precio**: hoy no hay sección; si lo quieres, va como «a consultar» o cifra.
+5. **Autorización escrita** si alguna vez se nombra a la Clínica.
+6. **Precio**: hoy no hay sección; si lo quieres, va como «a consultar» o cifra.
 

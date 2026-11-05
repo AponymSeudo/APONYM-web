@@ -7,9 +7,9 @@ GitHub Pages y apuntar el dominio.
 
 | Dato | Valor |
 |---|---|
-| Dominio | `aponym.cl` (confirmar: hoy no tiene registros DNS) |
-| Repo | `aponym-web` en GitHub, **público** (Pages gratis exige repo público) |
-| Cuenta | la misma de `Dvmyvn-hash` |
+| Dominio | `aponym.cl` (registrado; falta delegar los nameservers) |
+| Repo | `APONYM-web` en la organización `AponymSeudo`, **público** (Pages gratis exige repo público) |
+| Cuenta | la de la organización `AponymSeudo` (Damián como owner) |
 
 Cuando el dominio esté confirmado, ejecutar desde esta carpeta:
 
@@ -34,7 +34,7 @@ git init
 git add .
 git commit -m "Sitio APONYM v1"
 git branch -M main
-git remote add origin https://github.com/Dvmyvn-hash/aponym-web.git
+git remote add origin https://github.com/AponymSeudo/APONYM-web.git
 git push -u origin main
 ```
 
@@ -46,7 +46,7 @@ En el repo: **Settings → Pages**
 - Branch: **main** / carpeta **/ (root)**
 - Save.
 
-En uno o dos minutos el sitio queda en `https://dvmyvn-hash.github.io/aponym-web/`.
+En uno o dos minutos el sitio queda en `https://aponymseudo.github.io/APONYM-web/`.
 
 ## 3. Apuntar el dominio
 
@@ -68,7 +68,7 @@ hospeda zona). Con Cloudflare (gratis) o el DNS del registrador:
 | AAAA | `@` | `2606:50c0:8001::153` |
 | AAAA | `@` | `2606:50c0:8002::153` |
 | AAAA | `@` | `2606:50c0:8003::153` |
-| CNAME | `www` | `dvmyvn-hash.github.io` |
+| CNAME | `www` | `aponymseudo.github.io` |
 
 ### En NIC.cl
 Cambiar los **nameservers** del dominio a los del proveedor de DNS elegido (por ejemplo,
@@ -100,5 +100,6 @@ Debe responder `200` y `strict-transport-security`. Probar también:
 - Si se agrega una sección nueva, mantener la regla: sin scripts, sin fuentes externas,
   sin cookies.
 - Cuando cambie el EULA del producto: `python herramientas\eula_html.py` y volver a subir.
-- `og.png` ya está en `assets/`; si cambia el dominio, actualizar la URL absoluta en los
-  metadatos `og:url` y `og:image` (hoy son relativos).
+- `og.png` ya está en `assets/` (1200×630). `og:url`, `og:image` y `twitter:image` apuntan
+  hoy a `https://aponymseudo.github.io/APONYM-web/`; al publicar el dominio, cambiarlos a
+  `https://aponym.cl/`.

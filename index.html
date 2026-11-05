@@ -8,10 +8,18 @@
   <meta name="description" content="APONYM seudonimiza documentos jurídicos antes de pasarlos por una IA. Reemplaza nombres, RUT, domicilios y causas por marcadores y deja la llave en tu computador.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="APONYM">
+  <meta property="og:locale" content="es_CL">
   <meta property="og:title" content="APONYM — el nombre no viaja">
   <meta property="og:description" content="Seudonimización local para documentos jurídicos. La llave para volver a los datos originales queda en tu computador.">
-  <meta property="og:image" content="assets/og.png">
+  <meta property="og:url" content="https://aponymseudo.github.io/APONYM-web/">
+  <meta property="og:image" content="https://aponymseudo.github.io/APONYM-web/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="APONYM: el nombre no viaja">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="APONYM — el nombre no viaja">
+  <meta name="twitter:description" content="Seudonimización local para documentos jurídicos. La llave queda en tu computador.">
+  <meta name="twitter:image" content="https://aponymseudo.github.io/APONYM-web/assets/og.png">
   <link rel="icon" href="assets/icono.png" sizes="256x256">
   <link rel="stylesheet" href="estilos.css">
 </head>
@@ -52,12 +60,58 @@
       </p>
     </section>
 
-    <!-- Captura real del panel -->
-    <section class="contenedor captura">
-      <figure class="captura__marco">
-        <img src="assets/panel.png" alt="Panel de APONYM en Windows con las dos etapas del flujo y la fila de acciones." width="1000" height="316" loading="lazy">
-        <figcaption>El panel, tal como se instala: dos etapas y las acciones del flujo.</figcaption>
+    <!-- Prueba visual: antes / después -->
+    <section class="comparativa contenedor" aria-labelledby="comparativa-titulo">
+      <h2 id="comparativa-titulo" class="visualmente-oculto">El mismo documento antes y después de APONYM</h2>
+      <figure class="comparativa__marco">
+        <div class="comparativa__grid">
+          <div class="comparativa__lado">
+            <span class="comparativa__etiqueta">Original</span>
+            <p class="comparativa__texto">
+              Comparece doña <mark class="dato">María Soledad Fuentes Riquelme</mark>,
+              RUT <mark class="dato">12.345.678-9</mark>, domiciliada en
+              <mark class="dato">Av. Providencia 1234, depto 56</mark>, comuna de
+              Providencia, en la causa RIT <mark class="dato">C-1234-2026</mark>.
+            </p>
+          </div>
+          <div class="comparativa__lado">
+            <span class="comparativa__etiqueta">Copia para la IA</span>
+            <p class="comparativa__texto">
+              Comparece doña <span class="marcador">[NOMBRE-1-A7F3]</span>,
+              RUT <span class="marcador">[RUT-1-2B9C]</span>, domiciliada en
+              <span class="marcador">[DOMICILIO-1-7E14]</span>, comuna de
+              Providencia, en la causa RIT <span class="marcador">[RIT-1-0C55]</span>.
+            </p>
+          </div>
+        </div>
+        <figcaption class="comparativa__pie">
+          El mismo párrafo después de APONYM. La comuna se conserva porque define
+          competencia; el vínculo entre cada marcador y el dato original queda en la
+          llave, en tu computador.
+        </figcaption>
       </figure>
+    </section>
+
+    <!-- Ficha del producto -->
+    <section class="ficha" aria-label="Requisitos y funcionamiento">
+      <div class="contenedor ficha__grid">
+        <div class="ficha__item">
+          <b>Sistema</b>
+          Windows 10 y 11
+        </div>
+        <div class="ficha__item">
+          <b>Formatos</b>
+          DOCX, PDF con texto, TXT y MD
+        </div>
+        <div class="ficha__item">
+          <b>Conexión</b>
+          Ninguna: no llama a servidores
+        </div>
+        <div class="ficha__item">
+          <b>Cuentas</b>
+          Ninguna: se activa con un código
+        </div>
+      </div>
     </section>
 
     <!-- 2. El problema -->
@@ -102,6 +156,13 @@
           fuera del programa y bajo tu revisión.</p>
         </li>
       </ol>
+
+      <div class="captura">
+        <figure class="captura__marco">
+          <img src="assets/panel.png" alt="Panel de APONYM en Windows con las dos etapas del flujo y la fila de acciones." width="1000" height="316" loading="lazy">
+          <figcaption>El panel, tal como se instala: dos etapas y las acciones del flujo.</figcaption>
+        </figure>
+      </div>
 
       <p class="seccion__alerta">
         Lo que el motor no reconoce se declara en la lista del caso: nombres poco frecuentes,
