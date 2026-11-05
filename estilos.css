@@ -16,6 +16,7 @@
   --ocre: #C98A2E;
   --teal: #1F4E4A;
   --teal-profundo: #173B37;
+  --teal-tinte: #E1E9E7;
   --rubor: #F2E3D9;
   --arena: #E2DCCD;
   --salvia: #E3E8DF;
@@ -30,7 +31,6 @@
   --borde-sobre-oscuro-medio: rgba(236, 235, 231, .22);
   --borde-sobre-oscuro-fuerte: rgba(236, 235, 231, .45);
   --vidrio-cabecera: rgba(236, 235, 231, .72);
-  --ocre-hover: #D69A3E;
 
   --vidrio: rgba(255, 255, 255, .58);
   --vidrio-oscuro: rgba(255, 255, 255, .06);
@@ -55,7 +55,7 @@ body {
   margin: 0;
   background-color: var(--fondo);
   background-image:
-    radial-gradient(640px circle at 15% 18%, rgba(201, 138, 46, .12), transparent 70%),
+    radial-gradient(640px circle at 15% 18%, rgba(201, 138, 46, .08), transparent 70%),
     radial-gradient(680px circle at 85% 82%, rgba(47, 107, 79, .06), transparent 70%);
   background-attachment: fixed;
   color: var(--tinta);
@@ -676,13 +676,6 @@ kbd { border: 1px solid var(--borde); background: var(--papel); }
 
 /* ---------- capa de color: el expediente anotado ---------- */
 
-.hero__resaltado {
-  background: linear-gradient(transparent 58%, rgba(201, 138, 46, .34) 58%, rgba(201, 138, 46, .34) 90%, transparent 90%);
-  padding: 0 .06em;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
-
 .problema {
   width: calc(100% - 56px);
   max-width: calc(var(--ancho) - 56px);
@@ -692,16 +685,10 @@ kbd { border: 1px solid var(--borde); background: var(--papel); }
   border-radius: 16px;
 }
 
-.paso { border-top-width: 3px; }
-.paso:nth-child(1) { border-top-color: var(--arena); }
-.paso:nth-child(2) { border-top-color: var(--ocre); }
-.paso:nth-child(3) { border-top-color: var(--verde); }
-
 .paso__numero {
-  background: var(--ocre);
-  border-color: transparent;
+  background: transparent;
   color: var(--tinta);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .columna {
@@ -727,12 +714,12 @@ kbd { border: 1px solid var(--borde); background: var(--papel); }
 .contacto__texto { color: var(--texto-sobre-oscuro-claro); }
 
 .contacto .boton:not(.boton--fantasma) {
-  background: var(--ocre);
-  border-color: var(--ocre);
+  background: var(--fondo);
+  border-color: var(--fondo);
   color: var(--tinta);
 }
 
-.contacto .boton:not(.boton--fantasma):hover { background: var(--ocre-hover); }
+.contacto .boton:not(.boton--fantasma):hover { background: var(--papel); }
 
 .contacto .boton--fantasma {
   background: rgba(255, 255, 255, .08);
@@ -884,12 +871,13 @@ kbd { border: 1px solid var(--borde); background: var(--papel); }
 
 .publico__tarjeta {
   padding: 22px 22px 26px;
-  border-top-width: 4px;
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
 }
 
-.publico__tarjeta--ocre { border-top-color: var(--ocre); }
-.publico__tarjeta--verde { border-top-color: var(--verde); }
-.publico__tarjeta--teal { border-top-color: var(--teal); }
+.publico__tarjeta--ocre { background: var(--arena); }
+.publico__tarjeta--verde { background: var(--salvia); }
+.publico__tarjeta--teal { background: var(--teal-tinte); }
 
 .publico__tarjeta h3 { margin: 0 0 8px; font-size: 18px; }
 .publico__tarjeta p { margin: 0; font-size: 15px; color: var(--tinta-suave); }
