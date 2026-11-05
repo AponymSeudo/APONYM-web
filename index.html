@@ -44,7 +44,7 @@
     <!-- 1. Hero -->
     <section class="hero contenedor">
       <p class="eyebrow"><span class="eyebrow__linea" aria-hidden="true"></span> Seudonimización local para documentos jurídicos</p>
-      <h1 class="hero__titulo">El nombre<br>no viaja.</h1>
+      <h1 class="hero__titulo">El nombre<br><span class="hero__resaltado">no viaja</span>.</h1>
       <p class="hero__bajada">
         APONYM reemplaza nombres, RUT, domicilios y causas por marcadores antes de que
         el documento llegue a una IA. La llave para volver a los datos originales
@@ -164,6 +164,17 @@
         </figure>
       </div>
 
+      <div class="llave vidrio">
+        <h3 class="llave__titulo">La llave que vuelve atrás</h3>
+        <p class="llave__bajada">Un PDF por caso, con la tabla marcador → dato. Se abre en tu computador.</p>
+        <dl class="llave__filas">
+          <div class="llave__fila"><dt>[NOMBRE-1-A7F3]</dt><dd>María Soledad Fuentes Riquelme</dd></div>
+          <div class="llave__fila"><dt>[RUT-1-2B9C]</dt><dd>12.345.678-9</dd></div>
+          <div class="llave__fila"><dt>[DOMICILIO-1-7E14]</dt><dd>Av. Providencia 1234, depto 56</dd></div>
+          <div class="llave__fila"><dt>[RIT-1-0C55]</dt><dd>C-1234-2026</dd></div>
+        </dl>
+      </div>
+
       <p class="seccion__alerta">
         Lo que el motor no reconoce se declara en la lista del caso: nombres poco frecuentes,
         alias, empresas y frases que deban conservarse. La revisión final siempre es humana.
@@ -200,6 +211,57 @@
       </div>
     </section>
 
+    <!-- 4b. Tres formas de hacerlo -->
+    <section id="comparacion" class="seccion contenedor" aria-labelledby="comparacion-titulo">
+      <h2 id="comparacion-titulo" class="seccion__titulo">Tres formas de hacerlo</h2>
+      <p class="seccion__bajada">La diferencia no es la IA. Es dónde queda el vínculo.</p>
+
+      <table class="tabla">
+        <caption class="visualmente-oculto">Comparación de tres formas de usar IA con documentos jurídicos</caption>
+        <thead>
+          <tr>
+            <th scope="col"><span class="visualmente-oculto">Criterio</span></th>
+            <th scope="col" class="t-riesgo">Subir el caso a la IA</th>
+            <th scope="col" class="t-manual">Anonimizar a mano</th>
+            <th scope="col" class="t-aponym">APONYM</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <th scope="row">Riesgo de exponer datos</th>
+              <td data-criterio="Riesgo de exponer datos">Alto</td>
+              <td data-criterio="Riesgo de exponer datos">Medio</td>
+              <td data-criterio="Riesgo de exponer datos" class="col-ap">Bajo</td>
+            </tr>
+            <tr>
+              <th scope="row">Tiempo por documento</th>
+              <td data-criterio="Tiempo por documento">Segundos</td>
+              <td data-criterio="Tiempo por documento">Minutos</td>
+              <td data-criterio="Tiempo por documento" class="col-ap">Segundos</td>
+            </tr>
+            <tr>
+              <th scope="row">Se puede volver atrás</th>
+              <td data-criterio="Se puede volver atrás">No</td>
+              <td data-criterio="Se puede volver atrás">Difícil</td>
+              <td data-criterio="Se puede volver atrás" class="col-ap">Sí, con la llave</td>
+            </tr>
+            <tr>
+              <th scope="row">Dónde quedan los datos</th>
+              <td data-criterio="Dónde quedan los datos">En el proveedor</td>
+              <td data-criterio="Dónde quedan los datos">En tu equipo</td>
+              <td data-criterio="Dónde quedan los datos" class="col-ap">En tu equipo</td>
+            </tr>
+            <tr class="fila-fin">
+              <th scope="row">Consistencia entre documentos</th>
+              <td data-criterio="Consistencia entre documentos">No aplica</td>
+              <td data-criterio="Consistencia entre documentos">Baja</td>
+              <td data-criterio="Consistencia entre documentos" class="col-ap">Alta</td>
+            </tr>
+        </tbody>
+      </table>
+      <p class="tabla__nota">Comparación referencial. El riesgo final depende de cómo se use cada método.</p>
+    </section>
+
     <!-- 5. Local por diseño -->
     <section id="local" class="banda">
       <div class="contenedor">
@@ -227,8 +289,28 @@
       </div>
     </section>
 
+    <!-- 5b. Para quién -->
+    <section class="seccion contenedor" aria-labelledby="publico-titulo">
+      <h2 id="publico-titulo" class="seccion__titulo">Para quién es</h2>
+      <div class="publico">
+        <div class="publico__tarjeta publico__tarjeta--ocre vidrio">
+          <h3>Abogado independiente</h3>
+          <p>Consultas puntuales, sin montar un sistema de privacidad.</p>
+        </div>
+        <div class="publico__tarjeta publico__tarjeta--verde vidrio">
+          <h3>Estudio pequeño</h3>
+          <p>Varios casos por semana y un solo criterio para todo el equipo.</p>
+        </div>
+        <div class="publico__tarjeta publico__tarjeta--teal vidrio">
+          <h3>Docencia y clínica jurídica</h3>
+          <p>Casos reales con IA, bajo la revisión del profesor.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- 6. Equipo -->
-    <section class="seccion contenedor">
+    <section class="equipo-seccion">
+    <div class="seccion contenedor">
       <h2 class="seccion__titulo">Quiénes lo hacemos</h2>
       <div class="equipo">
         <div class="persona vidrio">
@@ -249,6 +331,7 @@
         </div>
       </div>
       <p class="equipo__frase">El derecho pone el criterio; la informática pone el método.</p>
+    </div>
     </section>
 
     <!-- 7. Contacto -->
