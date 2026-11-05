@@ -13,10 +13,6 @@
   --ambar: #8A5A20;
   --verde: #2F6B4F;
   --terracota: #B4552F;
-  --terracota-profunda: #7E3A26;
-  --texto-sobre-terracota: #F4E9DF;
-  --texto-sobre-terracota-suave: #E5D0C4;
-  --texto-sobre-terracota-tenue: #D9C0B2;
   --ocre: #C98A2E;
   --teal-tinte: #E1E9E7;
   --rubor: #F2E3D9;
@@ -27,6 +23,7 @@
   --texto-sobre-oscuro: #ECEBE7;
   --texto-sobre-oscuro-claro: #D8DEDC;
   --texto-sobre-oscuro-suave: #C9CFD4;
+  --texto-sobre-oscuro-tenue: #AEB7BE;
   --borde-sobre-oscuro: rgba(236, 235, 231, .14);
   --borde-sobre-oscuro-medio: rgba(236, 235, 231, .22);
   --borde-sobre-oscuro-fuerte: rgba(236, 235, 231, .45);
@@ -58,7 +55,6 @@ body {
   background-color: var(--fondo);
   background-image:
     radial-gradient(720px circle at 12% 15%, rgba(201, 138, 46, .11), transparent 70%),
-    radial-gradient(760px circle at 88% 28%, rgba(180, 85, 47, .07), transparent 70%),
     radial-gradient(820px circle at 55% 92%, rgba(47, 107, 79, .06), transparent 72%);
   background-attachment: fixed;
   color: var(--tinta);
@@ -543,8 +539,8 @@ kbd { border: 1px solid var(--borde); background: var(--papel); }
 /* ---------- banda oscura ---------- */
 
 .banda {
-  background: var(--terracota-profunda);
-  color: var(--texto-sobre-terracota);
+  background: var(--tinta);
+  color: var(--texto-sobre-oscuro);
   padding: 88px 0;
 }
 
@@ -581,7 +577,7 @@ kbd { border: 1px solid var(--borde); background: var(--papel); }
 
 .banda__grid p {
   margin: 0;
-  color: var(--texto-sobre-terracota-suave);
+  color: var(--texto-sobre-oscuro-suave);
   font-size: 15px;
 }
 
@@ -589,7 +585,7 @@ kbd { border: 1px solid var(--borde); background: var(--papel); }
   margin: 56px 0 0;
   padding-top: 22px;
   border-top: 1px solid var(--borde-sobre-oscuro-medio);
-  color: var(--texto-sobre-terracota-tenue);
+  color: var(--texto-sobre-oscuro-tenue);
   font-size: 14px;
   max-width: 780px;
 }
